@@ -21,6 +21,6 @@ class BankAccount
   end
 
   def close_account
-    sender.status == "closed"
+    status = "closed"
   end
 end
