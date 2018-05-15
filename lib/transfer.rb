@@ -16,9 +16,9 @@ class Transfer
     if valid? == true #&& @status == "pending"
     @sender.balance = @sender.balance - @amount
     @receiver.balance = @receiver.balance + @amount
-    @status == "complete"
+    @status = "complete"
     else valid? == false
-      @status == "rejected"
+      @status = "rejected"
     end
   end
 end
